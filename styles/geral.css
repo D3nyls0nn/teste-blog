@@ -10,3 +10,14 @@
   --cor4: #659326;
   --cor5: #3C6308;
 }
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor1);
+}
