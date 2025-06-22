@@ -1,1 +1,12 @@
 @charset "UTF-8";
+
+:root {
+  /* AMARELOS */
+  --cor1: #FCD15C;
+  --cor2: #F2B705;
+  
+  /* VERDES */
+  --cor3: #BECD39;
+  --cor4: #659326;
+  --cor5: #3C6308;
+}
