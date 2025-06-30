@@ -1,45 +1,38 @@
 @charset "UTF-8";
 
-
-:root {
-  /* AMARELOS */
-  --cor1: #FCD15C;
-  --cor2: #F2B705;
-  
-  /* VERDES */
-  --cor3: #BECD39;
-  --cor4: #659326;
-  --cor5: #3C6308;
-}
-
 body {
+  transition: 0.5s;
   background-color: rgb(43, 43, 43);
   height: 100vh;
 }
 
 #container {
+  transition: 0.5s;
   display: flex;
 }
 
 header {
+  transition: 0.5s;
   width: 50%;
   height: 100vh;
   color: #fff;
   display: flex;
   flex-direction: column;
-  
 }
 
 #mobile {
+  transition: 0.5s;
   display: none;
 }
 
 header>nav {
+  transition: 0.5s;
   display: flex;
   height: 40px;
 }
 
 header>nav>button {
+  transition: 0.5s;
   color: #fff;
   background-color: red;
   padding: 3px;
@@ -47,7 +40,8 @@ header>nav>button {
   display: block;
 }
 
-header>div {
+header>div#texto {
+  transition: 0.5s;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,10 +50,60 @@ header>div {
 }
 
 #imagens {
+  transition: 0.5s;
   width: 50vw;
-  height: 100vh;
+  min-height: 100vh;
+  background-color: rgb(232, 216, 156);
+  display: flex;
+  flex-direction: column;
 }
 
+.des {
+  width: 34vw;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#imagens>.des>h3 {
+  color: #000;
+}
+
+#des {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imagem {
+  transition: 0.5s;
+  width: 50vw;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.img {
+  transition: 0.5s;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 180px;
+  height: 180px;
+  display: flex;
+}
+
+#imagem1 {
+  justify-content: flex-start;
+}
+
+#imagem2 {
+  justify-content: flex-end;
+}
+
+#imagem3 {
+  justify-content: flex-start;
+}
 
 @media (max-width: 850px) {
   #container {
@@ -74,16 +118,32 @@ header>div {
   }
   
   #mobile {
+    transition: 0.5s;
     display: flex;
   }
   
   header nav#desktop {
+    transition: 0.5s;
     display: none;
   }
   
-  #imagens {
-    width: 100vw;
-    height: 100vh;
+  header>div#texto {
     transition: 0.5s;
+    font-size: 0.7rem;
+  }
+  
+  #imagens {
+    transition: 0.5s;
+    width: 100vw;
+    min-height: 100vh;
+  }
+  
+  div.des {
+    width: 70vw;
+  }
+  
+  .imagem {
+    transition: 0.5s;
+    width: 100vw;
   }
 }
