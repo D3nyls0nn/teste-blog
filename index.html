@@ -1,35 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Pamomhas</title>
-  <link rel="stylesheet" href="styles/geral.css">
-  <link rel="stylesheet" href="styles/inicio.css">
-  <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+                                                                                                                          crossorigin="anonymous"
+                                                                                                                          referrerpolicy="no-referrer" />
+  <title>Pamonhas</title>
+  <link rel="stylesheet" href="styles/geral.css" />
+  <link rel="stylesheet" href="styles/inicio.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico" />
 </head>
+
 <body>
-  <header>
-    <h1>Pamonhas</h1>
-    <p>Aqui você encontra o melhor blog de noticias nordestino do Brasil</p>
-  </header>
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Início</a>
-        </li>
-        <li>
-          <a href="#">Notícias</a>
-        </li>
-        <li>
-          <a href="#">Contato</a>
-        </li>
-      </ul>
-    </nav>
-  
-  
+  <div id="container">
+    <header>
+      <nav id="mobile">
+        <button>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      <nav id="desktop">
+        <input type="text" name="pesquisar" id="pesquisar" placeholder="pesquisar" />
+        <button href="#">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button href="#">
+          <i class="fa-solid fa-house"></i>
+        </button>
+        <button href="#">
+          <i class="fa-solid fa-phone"></i>
+        </button>
+      </nav>
+      
+      
+      <div>
+        <h1>Pamonhas</h1>
+        <p>O melhor restaurante de culinária nordestina do <span>Brasil!</span></p>
+      </div>
+      
+      
+    </header>
+    <div id="imagens"></div>
+  </div>
   
   <script src="scripts/script.js"></script>
 </body>
+
 </html>
